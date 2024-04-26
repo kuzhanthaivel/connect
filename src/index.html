@@ -1,31 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>connect</title>
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rancho&display=swap">
+    <style>
+        /* Additional CSS styles */
+        @media (max-width: 768px) {
+            .mx-36 {
+                margin: 0 auto;
+            }
+            .px-52 {
+                padding: 0 20px;
+            }
+            .px-36 {
+                padding: 0 20px;
+            }
+            .flex-gap {
+                gap: 10px;
+            }
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                connect: '#171721',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body class="bg-cover bg-center h-screen" style="background-image: url(../assets/bgimage.svg);">
 
-    <nav class="bg-purple-600  px-6 mx-36 mt-7 h-24 rounded-2xl flex gap-14 items-center">
+<body class="bg-cover bg-center min-h-screen pt-8" style="background-image: url(../assets/bgimage.svg); font-family: 'Poppins', sans-serif;">
+
+    <nav class="bg-purple-600 px-6 mx-4 md:mx-36 mt-5 md:mt-0 h-24 rounded-2xl flex items-center justify-between">
         <div>
-            <img src="../assets/profile.svg" alt="dp" height="150" width="150">
+            <img src="../assets/profile.svg" alt="dp" height="100" width="100">
         </div>
-        <p class="text-white font-semibold text-2xl ">Hi, I am  Kuzhanthaivelu</p>
+        <p class="text-white font-semibold text-lg md:text-2xl">Hi, I am Kuzhanthaivelu</p>
     </nav>
 
-    <div class="text-white  px-52 text-xl  pt-9 flex justify-center ">
+    <div class="text-white px-4 md:px-52 text-sm md:text-xl pt-4 md:pt-9 text-center">
         Would you be interested in establishing a connection on social media with me?
     </div>
-    
-    <div class="p-36 pt-10">
-        <div>
-            <img src="" alt="">
-            <button class="bg-indigo-950"></button>
+
+    <div class="px-4 md:px-36 pt-4 md:pt-10 flex justify-center flex-wrap md:flex-nowrap flex-gap gap-8">
+        <div class="flex flex-col justify-center w-36 p-2 md:p-4 bg-connect pb-6 rounded-xl item items-center">
+            <img src="../assets/linkedin.svg" alt="" width="90" height="75">
+            <button class="text-white bg-purple-600 rounded-xl px-2 py-1 h-10 md:h-12 hover:bg-blue-700 mt-2" onclick="window.open('https://www.linkedin.com/in/kuzhanthai-vel-38844024a/', '_blank');">🔗connect</button>
         </div>
+
+        <div class="flex flex-col justify-center w-36 p-2 md:p-4 bg-connect pb-6 rounded-xl items-center">
+            <img src="../assets/x.svg" alt="" width="90" height="75">
+            <button class="text-white bg-purple-600 rounded-xl px-2 py-1 h-10 md:h-12 hover:bg-blue-700 mt-2" onclick="window.open('https://twitter.com/Kuzhant007', '_blank');">🔗connect</button>
+        </div>
+
+        <div class="flex flex-col justify-center w-36 p-2 md:p-4 bg-connect pb-6 rounded-xl items-center">
+            <img src="../assets/github.svg" alt="" width="90" height="75">
+            <button class="text-white bg-purple-600 rounded-xl px-2 py-1 h-10 md:h-12 hover:bg-blue-700 mt-2" onclick="window.open('https://github.com/kuzhanthaivel', '_blank');">🔗connect</button>
+        </div>
+
+        <div class="flex flex-col justify-center w-36 p-2 md:p-4 bg-connect pb-6 rounded-xl items-center">
+            <img src="../assets/facebook.svg" alt="" width="90" height="75">
+            <button class="text-white bg-purple-600 rounded-xl px-2 py-1 h-10 md:h-12 hover:bg-blue-700 mt-2" onclick="window.open('https://www.facebook.com/profile.php?id=100068795503472', '_blank');">🔗connect</button>
+        </div>
+
+        <div class="flex flex-col justify-center w-36 p-2 md:p-4 bg-connect pb-6 rounded-xl items-center">
+            <img src="../assets/insta.svg" alt="" width="90" height="75">
+            <button class="text-white bg-purple-600 rounded-xl px-2 py-1 h-10 md:h-12 hover:bg-blue-700 mt-2" onclick="window.open('https://www.instagram.com/kuzhanthai007/', '_blank');">🔗connect</button>
+        </div>
+
+        <!-- Add more social media icons and buttons as needed -->
+
     </div>
 
+    <footer class="px-4 md:px-36 opacity-30 pt-56">
+        <hr>
+        <p class="text-center text-white text-opacity-40" style="font-family: 'Rancho', cursive;">© 2023 KUZHANTHAI. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
